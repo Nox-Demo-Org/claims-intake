@@ -16,10 +16,9 @@ export class ClaimsService {
     const event: ClaimReported = {
       claim_id: crypto.randomUUID(),
       ...input,
-      excess_amount: cover.excess_pence,
       reported_at: new Date().toISOString(),
     };
     await publish("claims.claim.reported", event);
-    return { claim_id: event.claim_id, status: "submitted", excess_amount: event.excess_amount };
+    return { claim_id: event.claim_id, status: "submitted" };
   }
 }
