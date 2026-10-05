@@ -15,6 +15,5 @@ export interface ClaimReported {
   peril: string;
   incident_date: string;
   description: string;
-  excess_amount: number; // pence, shown to the customer at intake
   reported_at: string;
 }
