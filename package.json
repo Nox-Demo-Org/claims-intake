@@ -1,0 +1,1 @@
+{ "name": "claims-intake", "private": true, "dependencies": { "@nestjs/core": "^10.3.0", "@google-cloud/pubsub": "^4.4.0" } }
